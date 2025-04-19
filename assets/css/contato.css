@@ -1,13 +1,15 @@
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     background: #0d1117;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: sans-serif;
-    flex-direction: column;
     gap: 5em;
+    padding: 2em 1em;
+    box-sizing: border-box;
 }
 
 .titulo {
@@ -37,6 +39,14 @@ body {
     }
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10em;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
 
 .app-folder {
     position: relative;
@@ -47,6 +57,8 @@ body {
     cursor: pointer;
     user-select: none;
     transition: transform 0.3s ease;
+    animation: slide-up 1s ease-out 1s forwards;
+    opacity: 0;
 }
 
 .folder-icon:hover {
@@ -92,33 +104,93 @@ body {
     transition: .5s;
 }
 
-.linkedin:hover{
+.linkedin:hover {
     box-shadow: 0px 0px 10px #0077B5;
 }
-.github:hover{
+
+.github:hover {
     box-shadow: 0px 0px 10px #fff;
 }
-.tiktok:hover{
+
+.tiktok:hover {
     box-shadow: 0px 0px 10px #fff;
 }
-.fecebook:hover{
+
+.fecebook:hover {
     box-shadow: 0px 0px 10px #1877F2;
 }
-.instagram:hover{
+
+.instagram:hover {
     box-shadow: 0px 0px 10px #E1306C;
 }
-.discord:hover{
+
+.discord:hover {
     box-shadow: 0px 0px 10px #5865F2;
 }
 
+.whatsapp {
+    background-color: #25D366;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    animation: slide-up 1s ease-out 1s forwards;
+    opacity: 0;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-.botao{
+.whatsapp h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+#whatsapp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#whatsapp-form input,
+#whatsapp-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: none;
+}
+
+#whatsapp-form input:focus,
+#whatsapp-form textarea:focus {
+    outline: 2px solid #075E54;
+}
+
+#whatsapp-form button {
+    background-color: #075E54;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#whatsapp-form button:hover {
+    background-color: #064e44;
+}
+
+
+
+.botao {
     margin-top: 100px;
     animation: slide-up 1s ease-out 1.5s forwards;
     opacity: 0;
 }
 
-.botao a{
+.botao a {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
@@ -129,7 +201,7 @@ body {
     font-weight: 700;
 }
 
-.botao a:hover{
+.botao a:hover {
     background-color: #000;
     transition: .5s;
 }
@@ -139,8 +211,22 @@ body {
         opacity: 0;
         transform: translateY(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width:768px){
+    .flex{
+        flex-direction: column;
+        gap: 11em;
+        margin-bottom: 0;
+    }
+
+    .whatsapp{
+        width: 70%;
+    }
+}
+    
