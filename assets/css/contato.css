@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    background: #0d1117;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin-bottom: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+
+.app-folder {
+    position: relative;
+}
+
+.folder-icon {
+    width: 100px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+.folder-icon:hover {
+    transform: scale(1.1);
+}
+
+.app-icons {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.app-icons.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.app {
+    width: 60px;
+    height: 60px;
+    background: #161b22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.app:hover {
+    transform: scale(1.1);
+    background: #ffffff;
+    transition: .5s;
+}
+
+.linkedin:hover{
+    box-shadow: 0px 0px 10px #0077B5;
+}
+.github:hover{
+    box-shadow: 0px 0px 10px #fff;
+}
+.tiktok:hover{
+    box-shadow: 0px 0px 10px #fff;
+}
+.fecebook:hover{
+    box-shadow: 0px 0px 10px #1877F2;
+}
+.instagram:hover{
+    box-shadow: 0px 0px 10px #E1306C;
+}
+.discord:hover{
+    box-shadow: 0px 0px 10px #5865F2;
+}
+
+
+.botao{
+    margin-top: 100px;
+    animation: slide-up 1s ease-out 1.5s forwards;
+    opacity: 0;
+}
+
+.botao a{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.botao a:hover{
+    background-color: #000;
+    transition: .5s;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
