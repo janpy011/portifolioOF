@@ -95,7 +95,8 @@ img {
 
 .nav__logo {
   color: var(--white-color);
-  margin-left: 30px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .nav__menu {
