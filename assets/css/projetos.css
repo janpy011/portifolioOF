@@ -1,0 +1,192 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/imgm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    animation: surgirDeCima 1s ease-out;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.slide img {
+    width: 60%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.botao-conhecer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.85;
+    animation: pulse 1s infinite;
+    transition: 0.3s;
+}
+
+.botao-conhecer:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.controles {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.controles button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.controles button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: .4s;
+}
+
+
+.voltar a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    animation: surgirDeBaixo 2s ease-out;
+}
+
+.voltar a:hover{
+    background-color: #000000;
+    transition: .5s;
+}
+
+/* Animações */
+@keyframes surgirDeCima {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes surgirDeBaixo {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.08);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.9;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo {
+        width: 80%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .carrossel-container {
+        max-width: 90%;
+    }
+
+    .slide img {
+        height: 160px;
+    }
+
+    .botao-conhecer {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .controles button {
+        font-size: 1.3rem;
+        padding: 4px 8px;
+    }
+}
