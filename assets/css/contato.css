@@ -10,7 +10,14 @@ body {
     gap: 5em;
     padding: 2em 1em;
     box-sizing: border-box;
+    overflow: scroll;
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 .titulo {
     color: #ffffff;
@@ -39,7 +46,7 @@ body {
     }
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     gap: 10em;
@@ -218,15 +225,14 @@ body {
     }
 }
 
-@media screen and (max-width:768px){
-    .flex{
+@media screen and (max-width:768px) {
+    .flex {
         flex-direction: column;
         gap: 11em;
         margin-bottom: 0;
     }
 
-    .whatsapp{
+    .whatsapp {
         width: 70%;
     }
 }
-    

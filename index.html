@@ -2,18 +2,19 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/logo-ofc.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/img/logo-ofc.ico" type="image/x-icon" />
 </head>
+
 <body>
-    <!-- ===== HEADER =====-->
+    <!-- ===== HEADER ===== -->
     <header class="l-header" id="inicio">
         <nav class="nav bd-grid">
-            <a href="#" class="nav__logo">Janpierry</a>
+            <a href="assets/pages/sobreMim.html" class="nav__logo">Janpierry</a>
 
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu-alt-right'></i>
@@ -21,7 +22,6 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
                     <li class="nav__item"><a href="assets/pages/habilidades.html" class="nav__link">Habilidades</a></li>
                     <li class="nav__item"><a href="assets/pages/projetos.html" class="nav__link">Projetos</a></li>
                     <li class="nav__item"><a href="assets/pages/contato.html" class="nav__link">Contato</a></li>
@@ -30,54 +30,52 @@
         </nav>
     </header>
 
+    <!-- ===== HOME ===== -->
     <main>
-        <!-- ===== HOME =====-->
-        <div class="home">
-            <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
-            <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
-            <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
-            <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
+        <section class="home" id="home">
+            <div class="home__parallax parallax home__parallax-img1" data-rellax-speed="-9"></div>
+            <div class="home__parallax parallax home__parallax-img2" data-rellax-speed="-7"></div>
+            <div class="home__parallax parallax home__parallax-img3" data-rellax-speed="-6"></div>
+            <div class="home__parallax parallax home__parallax-img4" data-rellax-speed="-3"></div>
 
             <h1 class="parallax home__title" data-rellax-speed="-6">Bem Vindo!</h1>
-            <span class="parallax home__subtitle" data-rellax-speed="-5">Esse é o meu portifolio.</span>
+            <span class="parallax home__subtitle" data-rellax-speed="-5">Esse é o meu portfólio.</span>
 
             <div class="home__scroll">
                 <a href="#section"><i class='bx bx-mouse'></i></a>
             </div>
-        </div>
+        </section>
 
-        <!-- ===== SECTION =====-->
+        <!-- ===== SECTION ===== -->
         <section class="l-section" id="section">
             <div class="section">
                 <div class="section__data">
-                    <h2 class="section__title">Olá! Me chamo Janpierry. </h2>
-                    <p class="section__text">Tenho 20 anos e sou estudante de Análise e
-                        Desenvolvimento de Sistemas. Desde cedo sou fascinado por tecnologia e tudo o que ela pode
-                        proporcionar. Estou sempre buscando aprender mais e me desenvolver, tanto na parte técnica
-                        quanto pessoal.
-
+                    <h2 class="section__title">Olá! Me chamo Janpierry.</h2>
+                    <p class="section__text">
+                        Tenho 20 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Desde cedo sou fascinado
+                        por tecnologia e tudo o que ela pode proporcionar.
+                        Estou sempre buscando aprender mais e me desenvolver, tanto na parte técnica quanto pessoal.
                         Atualmente, estou focado em aprimorar minhas habilidades em programação, desenvolvimento web e
-                        soluções inovadoras. Acredito que o aprendizado é contínuo e estou determinado a crescer cada
-                        vez mais nesse universo que tanto me inspira.</p>
+                        soluções inovadoras.
+                        Acredito que o aprendizado é contínuo e estou determinado a crescer cada vez mais nesse universo
+                        que tanto me inspira.
+                    </p>
+
+                    <div class="btn">
+                        <a href="assets/pages/sobreMim.html">Sobre Mim</a>
+                    </div>
                 </div>
 
-                <img src="assets/img/euCosta.PNG" alt="" class="section__img">
+                <img src="assets/img/euCosta.PNG" alt="Foto de Janpierry" class="section__img" />
             </div>
         </section>
     </main>
 
-    <!-- RELLAX JS -->
-    <script src="assets/js/rellax.min.js"></script>
-
-    <!-- GSAP -->
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
-    <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
