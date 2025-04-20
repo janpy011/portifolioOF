@@ -98,12 +98,20 @@ img {
 .nav__logo {
   font-size: 20px;
   color: var(--white-color);
+  width: 200px;
+  font-size: 23px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
   color: #a8a8a8;
-  font-size: 21px;
+  font-size: 25px;
   transition: .4s;
+}
+
+.nav__logo.fade-out {
+  opacity: 0;
 }
 
 .nav__toggle {
@@ -280,12 +288,12 @@ img {
   border-radius: 0.5rem;
 }
 
-.btn{
+.btn {
   z-index: 1000;
   margin-top: 30px;
 }
 
-.btn a{
+.btn a {
   font-size: 18px;
   background-color: #fff;
   color: #000;
@@ -294,7 +302,7 @@ img {
   padding: 10px;
 }
 
-.btn a:hover{
+.btn a:hover {
   background-color: #a8a8a8;
 }
 

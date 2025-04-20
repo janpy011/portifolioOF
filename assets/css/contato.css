@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -10,6 +12,7 @@ body {
     gap: 5em;
     padding: 2em 1em;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -22,7 +25,6 @@ body::-webkit-scrollbar {
 .titulo {
     color: #ffffff;
     font-size: 2rem;
-    font-family: 'Courier New', monospace;
     text-align: center;
     margin-bottom: 40px;
     white-space: nowrap;
@@ -136,17 +138,16 @@ body::-webkit-scrollbar {
 }
 
 .whatsapp {
-    background-color: #25D366;
+    background-color: #005c22;
     padding: 20px;
     border-radius: 15px;
     max-width: 400px;
     width: 90%;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     animation: slide-up 1s ease-out 1s forwards;
     opacity: 0;
     color: #fff;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .whatsapp h2 {
