@@ -52,7 +52,7 @@ sr.reveal('.section__data', { origin: 'left', distance: '50px' });
 sr.reveal('.section__img', { origin: 'right', distance: '50px', delay: 200 });
 
 /* ===== TEXTO DIGITANDO NO LOGO COM CURSOR PISCANDO ===== */
-const textosLogo = ['Janpierry', 'Sobre Mim ←'];
+const textosLogo = ['Janpierry', 'Sobre Mim'];
 let logoIndex = 0;
 const logo = document.querySelector('.nav__logo');
 
@@ -61,7 +61,7 @@ logo.style.position = 'relative';
 const style = document.createElement('style');
 style.innerHTML = `
 .nav__logo::after {
-    content: '|';
+    content: '←';
     animation: blink 1s step-end infinite;
     position: absolute;
     right: -10px;
