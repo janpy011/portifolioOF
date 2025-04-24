@@ -121,6 +121,12 @@ img {
   display: block;
 }
 
+.nav__toggle:hover{
+  color: #a8a8a8;
+  font-size: 1.9rem;
+  transition: .4s;
+}
+
 .nav__menu {
   position: fixed;
   top: -100%;
